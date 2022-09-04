@@ -1,0 +1,127 @@
+:root {
+  /* Colors */
+  --Dark_cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very_dark_blue: hsl(212, 21%, 14%);
+  --Dark_grayish_blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: "Fraunces", serif; */
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--Cream);
+}
+
+.container {
+  max-width: 600px;
+  display: flex;
+}
+
+.bg__image {
+  flex: 1;
+  background-color: lightpink;
+  background-image: url(./images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.details {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2rem;
+  flex: 1;
+  background-color: var(--White);
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.details__subtitle {
+  color: var(--Dark_grayish_blue);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+}
+
+.details__title {
+  color: var(--Very_dark_blue);
+  font-family: "Fraunces", serif;
+}
+
+.details__information {
+  color: var(--Dark_grayish_blue);
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Fraunces", serif;
+}
+
+.price__now {
+  color: var(--Dark_cyan);
+  font-size: 2rem;
+}
+
+.price__before {
+  font-size: 0.9rem;
+  color: var(--Dark_grayish_blue);
+  text-decoration: line-through;
+  margin-left: 1rem;
+}
+
+.btn__add_to_cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  border: none;
+  background-color: var(--Dark_cyan);
+  color: var(--White);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn__add_to_cart:hover {
+  transition: all 0.2s;
+  background-color: var(--Very_dark_blue);
+}
+
+@media screen and (max-width: 625px) {
+  .container {
+    max-width: 90%;
+    width: 90%;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .bg__image {
+    flex: 1 0 250px;
+    border-radius: 1rem 1rem 0rem 0rem;
+  }
+
+  .details {
+    border-radius: 0rem 0rem 1rem 1rem;
+    gap: 0.7rem;
+  }
+}
