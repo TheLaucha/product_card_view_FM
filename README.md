@@ -24,7 +24,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Link](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub/interactive-rating-component-Skf1U62Eq)
+- Solution URL: [Link](https://www.frontendmentor.io/solutions/product-preview-card-component-6mMmIcgsYE)
 - Live Site URL: [Link](https://thelaucha.github.io/product_card_view_FM/)
 
 ## My process
